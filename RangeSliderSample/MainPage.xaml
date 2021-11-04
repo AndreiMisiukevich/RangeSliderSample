@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="RangeSliderSample.MainPage">
+
+    <ContentPage.Resources>
+        <x:String x:Key="ValueLabelStringFormat">{0:0}$</x:String>
+    </ContentPage.Resources>
+
+    <StackLayout Padding="16, 0">
+        <xct:RangeSlider VerticalOptions="CenterAndExpand"
+                         TrackSize="30"
+                         ThumbSize="30"
+                         TrackColor="Gold"
+                         TrackHighlightColor="Purple"
+                         MinimumValue="10"
+                         MaximumValue="1000"
+                         UpperValue="1000"
+                         StepValue="1"
+                         ValueLabelStringFormat="{StaticResource ValueLabelStringFormat}" />
+    </StackLayout>
+
+</ContentPage>
